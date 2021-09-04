@@ -5,7 +5,7 @@ describe('Login feature on Demoblaze site', function () {
 
     it('Login with valid account', function () {
         cy.get('#login2').should('be.visible').click()
-        cy.get('#loginusername').type('jojo', {force: true}).should('have.value', 'jojo')
+        cy.get('#loginusername').type('jojo-test', {force: true}).should('have.value', 'jojo-test')
         cy.get('#loginpassword').type('jojo', {force: true}).should('have.value', 'jojo')
         cy.get('button').contains('Log in').click()
     })
