@@ -15,6 +15,6 @@ describe('Registration for DemoQA site', function () {
         cy.get('#hobbiesWrapper > .col-md-9 > :nth-child(2)').click()
         cy.get('#currentAddress').type('rumah')
         cy.get('#submit').click()
-        cy.get('#closeLargeModal').click({force: true})
+        cy.get('#closeLargeModal').click()
     })
 })
